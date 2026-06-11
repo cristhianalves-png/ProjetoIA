@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookScript AI - Descubra livros incríveis recomendados por nossa Inteligência Artificial com base nos seus interesses.">
+    <title>BookScript AI</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span aria-hidden="true">📚</span> BookScript AI
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#buscar">Buscar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Descubra Livros com Inteligência Artificial</h1>
+            <p>Uma plataforma inteligente que recomenda livros com base em seus interesses e preferências.</p>
+            <button type="button">Começar Agora</button>
+        </div>
+    </section>
+
+    <section class="estatisticas">
+        <div class="card-estatistica">
+            <h2>10.000+</h2>
+            <p>Livros Analisados</p>
+        </div>
+        <div class="card-estatistica">
+            <h2>95%</h2>
+            <p>Precisão das Recomendações</p>
+        </div>
+        <div class="card-estatistica">
+            <h2>5.000+</h2>
+            <p>Usuários Ativos</p>
+        </div>
+        <div class="card-estatistica">
+            <h2>24h</h2>
+            <p>Sistema Disponível</p>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            O BookScript AI é um sistema de recomendação de livros desenvolvido utilizando conceitos de Inteligência Artificial, Machine Learning e Algoritmos de Busca. O objetivo é auxiliar leitores a encontrarem livros compatíveis com seus gostos de forma rápida e eficiente.
+        </p>
+    </section>
+
+    <section class="como-funciona">
+        <h2>Como Funciona</h2>
+        <div class="etapas">
+            <div class="etapa">
+                <h3><span aria-hidden="true">1️⃣</span> Escolha um Gênero</h3>
+                <p>Selecione a categoria de livros desejada.</p>
+            </div>
+            <div class="etapa">
+                <h3><span aria-hidden="true">2️⃣</span> IA Analisa os Dados</h3>
+                <p>O algoritmo processa informações do catálogo.</p>
+            </div>
+            <div class="etapa">
+                <h3><span aria-hidden="true">3️⃣</span> Receba Recomendações</h3>
+                <p>O sistema apresenta os livros mais relevantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="recursos">
+        <h2>Recursos da Plataforma</h2>
+        <div class="cards">
+            <div class="card">
+                <h3><span aria-hidden="true">🤖</span> IA de Recomendação</h3>
+                <p>Recomenda livros com base em avaliações e gêneros.</p>
+            </div>
+            <div class="card">
+                <h3><span aria-hidden="true">📚</span> Catálogo Inteligente</h3>
+                <p>Organização automática dos livros disponíveis.</p>
+            </div>
+            <div class="card">
+                <h3><span aria-hidden="true">🔍</span> Busca Avançada</h3>
+                <p>Pesquise por nome, gênero ou autor.</p>
+            </div>
+            <div class="card">
+                <h3><span aria-hidden="true">⭐</span> Ranking</h3>
+                <p>Exibição dos livros mais bem avaliados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="destaques">
+        <h2><span aria-hidden="true">📖</span> Livro do Dia</h2>
+        <div id="livro-dia"></div>
+    </section>
+
+    <section class="destaques">
+        <h2><span aria-hidden="true">🏆</span> Top 10 Livros</h2>
+        <div id="top10" class="cards"></div>
+    </section>
+
+    <section id="buscar" class="buscar">
+        <h2>Encontrar Livros</h2>
+        <p>Utilize nossa IA para receber recomendações personalizadas.</p>
+        
+        <div class="painel-busca">
+            <label for="pesquisa" style="display: none;">Digite o nome do livro</label>
+            <input type="text" id="pesquisa" placeholder="Digite o nome do livro">
+            
+            <label for="genero" style="display: none;">Escolha um gênero</label>
+            <select id="genero">
+                <option value="">Escolha um gênero</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="Terror">Terror</option>
+                <option value="Romance">Romance</option>
+                <option value="Misterio">Mistério</option>
+                <option value="Ficcao Cientifica">Ficção Científica</option>
+            </select>
+            
+            <button type="button" onclick="BookScript.buscar()">Buscar Recomendações</button>
+        </div>
+    </section>
+
+    <section class="resultado-section">
+        <h2>Recomendações</h2>
+        <div id="resultado">
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <h3>BookScript AI</h3>
+            <p>Projeto acadêmico utilizando Inteligência Artificial e Algoritmos de Busca.</p>
+            <p>&copy; 2026 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

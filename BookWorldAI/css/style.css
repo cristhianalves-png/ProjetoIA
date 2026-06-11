@@ -1,0 +1,376 @@
+/* ========================= */
+/* RESET & BASE */
+/* ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(circle at 50% 0%, #12284c 0%, #020617 80%);
+    background-attachment: fixed;
+    color: #e2e8f0;
+    overflow-x: hidden;
+}
+
+/* ========================= */
+/* NAVBAR ART DÉCO */
+/* ========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: fixed;
+    width: 100%;
+    background: rgba(2, 6, 23, 0.95);
+    border-bottom: 2px solid #38bdf8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #38bdf8;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-text {
+    max-width: 850px;
+    padding: 50px;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    outline: 1px solid rgba(56, 189, 248, 0.4);
+    outline-offset: -12px;
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* ========================= */
+/* PAINEL DE BUSCA INSTANTÂNEA */
+/* ========================= */
+.buscar {
+    background: #0b172a;
+    border-top: 1px solid #38bdf8;
+    border-bottom: 1px solid #38bdf8;
+    text-align: center;
+}
+
+.painel-busca {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Estilo "Máquina" para os Inputs */
+.painel-busca input, .painel-busca select {
+    padding: 15px 20px;
+    background: #020617;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    min-width: 300px;
+}
+
+.painel-busca input:focus {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    background: #0f172a;
+}
+
+.painel-busca input::placeholder {
+    color: rgba(56, 189, 248, 0.5);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* ========================= */
+/* CARDS DE LIVROS & ANIMAÇÕES */
+/* ========================= */
+#resultado, .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.livro {
+    width: 300px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid #38bdf8;
+    outline: 1px solid rgba(56, 189, 248, 0.3);
+    outline-offset: -6px;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: fadeIn 0.5s ease backwards; /* Animação ao aparecer na busca */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.livro:hover {
+    transform: scale(1.03);
+    background: #1e293b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.livro img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-bottom: 1px solid #38bdf8;
+}
+
+.livro h3 {
+    padding: 20px 15px 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.livro p {
+    padding: 5px 15px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.livro p.descricao {
+    padding-bottom: 25px;
+    font-style: italic;
+    color: #cbd5e1;
+}
+
+/* ========================= */
+/* DESTAQUE: LIVRO DO DIA */
+/* ========================= */
+.livro-destaque {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    border: 2px solid #38bdf8;
+}
+
+.livro-destaque img {
+    width: 40%;
+    height: 450px;
+    border-bottom: none;
+    border-right: 1px solid #38bdf8;
+}
+
+.livro-destaque h2 {
+    color: #38bdf8;
+    margin-top: 10px;
+}
+
+/* ========================= */
+/* TOP 10 RANKING */
+/* ========================= */
+.card {
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #38bdf8;
+    background: rgba(15, 23, 42, 0.5);
+}
+
+.card small {
+    display: block;
+    color: #38bdf8;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* ========================= */
+/* FOOTER & AVISOS */
+/* ========================= */
+.aviso {
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 40px;
+    border: 1px dashed #38bdf8;
+}
+
+footer {
+    padding: 50px;
+    background: #020617;
+    border-top: 2px solid #38bdf8;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+@media (max-width: 768px) {
+    .painel-busca { flex-direction: column; align-items: center; }
+    .painel-busca input, .painel-busca select { width: 90%; min-width: auto; }
+    .livro-destaque { flex-direction: column; }
+    .livro-destaque img { width: 100%; height: 300px; }
+    .hero h1 { font-size: 2rem; }
+}
+
+/* ========================= */
+/* ESTATÍSTICAS E INFORMAÇÕES */
+/* ========================= */
+.estatisticas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 8%;
+    background: #0b172a;
+    border-top: 1px solid #38bdf8;
+    border-bottom: 1px solid #38bdf8;
+    text-align: center;
+}
+
+.card-estatistica {
+    flex: 1;
+    min-width: 200px;
+}
+
+.card-estatistica h2 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.card-estatistica p {
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* SOBRE, COMO FUNCIONA E RECURSOS */
+/* ========================= */
+.sobre, .como-funciona, .recursos {
+    padding: 60px 8%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sobre h2, .como-funciona h2, .recursos h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Cards das Etapas */
+.etapas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.etapa {
+    flex: 1;
+    min-width: 250px;
+    background: rgba(15, 23, 42, 0.6);
+    padding: 30px 20px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.etapa:hover {
+    transform: translateY(-5px);
+}
+
+.etapa h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Design dos números (1, 2, 3) */
+.etapa h3 span[aria-hidden="true"] {
+    background: #38bdf8;
+    color: #020617;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.etapa p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

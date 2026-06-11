@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "nome": "O Senhor dos Anéis: A Sociedade do Anel",
+    "autor": "J.R.R. Tolkien",
+    "genero": "Fantasia",
+    "ano": 1954,
+    "nota": 9.8,
+    "capa": "dados/capas/senhor-aneis.jpg",
+    "descricao": "Um grupo de heróis parte em uma jornada épica para destruir um anel mágico e salvar a Terra-média."
+  },
+  {
+    "id": 2,
+    "nome": "Sentido e Sensibilidade",
+    "autor": "Jane Austen",
+    "genero": "Romance",
+    "ano": 1811,
+    "nota": 8.9,
+    "capa": "dados/capas/sentido-sensibilidade.jpg",
+    "descricao": "As irmãs Dashwood buscam amor e felicidade em uma sociedade repleta de regras e convenções."
+  },
+  {
+    "id": 3,
+    "nome": "Harry Potter e a Pedra Filosofal",
+    "autor": "J.K. Rowling",
+    "genero": "Fantasia",
+    "ano": 1997,
+    "nota": 9.5,
+    "capa": "dados/capas/harry-potter.jpg",
+    "descricao": "Um menino descobre que é um bruxo e embarca em seu primeiro ano na Escola de Magia de Hogwarts."
+  },
+  {
+    "id": 4,
+    "nome": "Duna",
+    "autor": "Frank Herbert",
+    "genero": "Ficção Científica",
+    "ano": 1965,
+    "nota": 9.7,
+    "capa": "dados/capas/duna.jpg",
+    "descricao": "Uma saga épica de política, traição e misticismo no desértico planeta Arrakis."
+  },
+  {
+    "id": 5,
+    "nome": "O Exorcista",
+    "autor": "William Peter Blatty",
+    "genero": "Terror",
+    "ano": 1971,
+    "nota": 9.1,
+    "capa": "dados/capas/exorcista.jpg",
+    "descricao": "A história aterrorizante da possessão demoníaca de uma jovem e os esforços para salvá-la."
+  },
+  {
+    "id": 6,
+    "nome": "Sherlock Holmes: O Cão dos Baskerville",
+    "autor": "Arthur Conan Doyle",
+    "genero": "Mistério",
+    "ano": 1902,
+    "nota": 9.3,
+    "capa": "dados/capas/sherlock.jpg",
+    "descricao": "O detetive mais famoso do mundo investiga uma maldição lendária que assombra uma família nobre."
+  },
+  {
+    "id": 7,
+    "nome": "1984",
+    "autor": "George Orwell",
+    "genero": "Ficção Científica",
+    "ano": 1949,
+    "nota": 9.6,
+    "capa": "dados/capas/1984.jpg",
+    "descricao": "Em um futuro distópico, um homem tenta se rebelar contra um sistema de vigilância totalitário."
+  },
+  {
+    "id": 8,
+    "nome": "Orgulho e Preconceito",
+    "autor": "Jane Austen",
+    "genero": "Romance",
+    "ano": 1813,
+    "nota": 9.4,
+    "capa": "dados/capas/orgulho-preconceito.jpg",
+    "descricao": "A vibrante Elizabeth Bennet lida com questões de boas maneiras, educação e casamento."
+  },
+  {
+    "id": 9,
+    "nome": "O Iluminado",
+    "autor": "Stephen King",
+    "genero": "Terror",
+    "ano": 1977,
+    "nota": 9.2,
+    "capa": "dados/capas/iluminado.jpg",
+    "descricao": "Um homem assume o cargo de zelador em um hotel isolado, onde forças malignas começam a afetá-lo."
+  },
+  {
+    "id": 10,
+    "nome": "Neuromancer",
+    "autor": "William Gibson",
+    "genero": "Ficção Científica",
+    "ano": 1984,
+    "nota": 8.8,
+    "capa": "dados/capas/neuromancer.jpg",
+    "descricao": "Um hacker de dados é contratado para uma última missão que o leva ao limite do ciberespaço."
+  },
+  {
+    "id": 11,
+    "nome": "O Código Da Vinci",
+    "autor": "Dan Brown",
+    "genero": "Mistério",
+    "ano": 2003,
+    "nota": 8.5,
+    "capa": "dados/capas/codigo-davinci.jpg",
+    "descricao": "Um assassinato no Louvre revela uma conspiração religiosa protegida por uma sociedade secreta."
+  },
+  {
+    "id": 12,
+    "nome": "O Hobbit",
+    "autor": "J.R.R. Tolkien",
+    "genero": "Fantasia",
+    "ano": 1937,
+    "nota": 9.6,
+    "capa": "dados/capas/hobbit.jpg",
+    "descricao": "Bilbo Bolseiro é arrastado para uma aventura inesperada para recuperar um tesouro de um dragão."
+  },
+  {
+    "id": 13,
+    "nome": "Fahrenheit 451",
+    "autor": "Ray Bradbury",
+    "genero": "Ficção Científica",
+    "ano": 1953,
+    "nota": 9.0,
+    "capa": "dados/capas/fahrenheit.jpg",
+    "descricao": "Em uma sociedade onde livros são proibidos, um bombeiro começa a questionar seu papel de queimá-los."
+  },
+  {
+    "id": 14,
+    "nome": "Drácula",
+    "autor": "Bram Stoker",
+    "genero": "Terror",
+    "ano": 1897,
+    "nota": 9.3,
+    "capa": "dados/capas/dracula.jpg",
+    "descricao": "O relato clássico do conde transilvânico que viaja para a Inglaterra em busca de novas vítimas."
+  },
+  {
+    "id": 15,
+    "nome": "Assassinato no Expresso do Oriente",
+    "autor": "Agatha Christie",
+    "genero": "Mistério",
+    "ano": 1934,
+    "nota": 9.5,
+    "capa": "dados/capas/expresso-oriente.jpg",
+    "descricao": "O detetive Hercule Poirot precisa resolver um crime ocorrido em um trem preso na neve."
+  },
+  {
+    "id": 16,
+    "nome": "Cem Anos de Solidão",
+    "autor": "Gabriel García Márquez",
+    "genero": "Romance",
+    "ano": 1967,
+    "nota": 9.7,
+    "capa": "dados/capas/cem-anos.jpg",
+    "descricao": "A épica história da família Buendía na mística aldeia de Macondo."
+  }
+]
