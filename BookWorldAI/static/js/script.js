@@ -15,7 +15,7 @@ const BookScript = {
     // 2. Carregar o arquivo JSON
     async carregarDados() {
         try {
-            const response = await fetch("dados/dados.json");
+            const response = await fetch("../static/js/dados.json");
             if (!response.ok) throw new Error("Erro ao carregar banco de dados.");
             
             this.catalogo = await response.json();
